@@ -1,5 +1,9 @@
 zendf2napratica
 ===============
+configs
+curl -sS https://getcomposer.org/installer | php
+sudo pear install pear.phpunit.de/DbUnit
+
 
 ZendSkeletonApplication
 =======================
