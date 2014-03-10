@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="5" assertions="0" failures="0" errors="6" time="1.697364">
+    <testsuite name="Application Teste Suite" tests="0" assertions="0" failures="0" errors="0" time="0.000000"/>
+    <testsuite name="Skel Test Suite" tests="5" assertions="0" failures="0" errors="6" time="1.697364">
+      <testsuite name="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" namespace="Application\Model" fullPackage="Application.Model" tests="5" assertions="0" failures="0" errors="6" time="1.697364">
+        <testcase name="testGetInputFilter" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="20" assertions="0" time="1.226316">
+          <error type="PDOException">Application\Model\PostTest::testGetInputFilter
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'existis posts(
+            id INT NOT NULL AUTO_INCREMENT,
+            title VAR' at line 1
+
+/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Connection.php:386
+/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Adapter.php:189
+/var/www/zendf2napratica/module/Core/src/Core/Test/TestCase.php:123
+/var/www/zendf2napratica/module/Core/src/Core/Test/TestCase.php:68
+</error>
+        </testcase>
+        <testcase name="testInsert" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="51" assertions="0" time="0.114160">
+          <error type="PDOException">Application\Model\PostTest::testInsert
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'existis posts(
+            id INT NOT NULL AUTO_INCREMENT,
+            title VAR' at line 1
+
+/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Connection.php:386
+/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Adapter.php:189
+/var/www/zendf2napratica/module/Core/src/Core/Test/TestCase.php:123
+/var/www/zendf2napratica/module/Core/src/Core/Test/TestCase.php:68
+</error>
+        </testcase>
+        <testcase name="testInsertInvalido" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="66" assertions="0" time="0.121897">
+          <error type="PDOException">Application\Model\PostTest::testInsertInvalido
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'existis posts(
+            id INT NOT NULL AUTO_INCREMENT,
+            title VAR' at line 1
+
+/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Connection.php:386
+/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Adapter.php:189
+/var/www/zendf2napratica/module/Core/src/Core/Test/TestCase.php:123
+/var/www/zendf2napratica/module/Core/src/Core/Test/TestCase.php:68
+</error>
+        </testcase>
+        <testcase name="testUpdate" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="74" assertions="0" time="0.116200">
+          <error type="PDOException">Application\Model\PostTest::testUpdate
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'existis posts(
+            id INT NOT NULL AUTO_INCREMENT,
+            title VAR' at line 1
+
+/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Connection.php:386
+/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Adapter.php:189
+/var/www/zendf2napratica/module/Core/src/Core/Test/TestCase.php:123
+/var/www/zendf2napratica/module/Core/src/Core/Test/TestCase.php:68
+</error>
+        </testcase>
+        <testcase name="testDelete" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="97" assertions="0" time="0.118791">
+          <error type="PDOException">Application\Model\PostTest::testDelete
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'existis posts(
+            id INT NOT NULL AUTO_INCREMENT,
+            title VAR' at line 1
+
+/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Connection.php:386
+/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Adapter.php:189
+/var/www/zendf2napratica/module/Core/src/Core/Test/TestCase.php:123
+/var/www/zendf2napratica/module/Core/src/Core/Test/TestCase.php:68
+</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

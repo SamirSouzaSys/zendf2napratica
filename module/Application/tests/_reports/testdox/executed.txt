@@ -1,0 +1,8 @@
+Application\Model\Post
+ [ ] Get input filter
+ [ ] Input filterinvalido
+ [ ] Insert
+ [ ] Insert invalido
+ [ ] Update
+ [ ] Delete
+
