@@ -1,8 +1,43 @@
-Application\Model\Post
- [ ] Get input filter
- [ ] Input filterinvalido
+ApplicationModelPost
+ [x] Get input filter
+ [x] Input filter valid
+ [x] Input filter invalido
+ [x] Insert
+ [x] Insert invalido
+ [x] Update
+ [x] Delete
+
+IndexController
+ [x]  404
+ [ ] Index action
+ [ ] Save action get request
+ [ ] Save action post request
+ [x] Save action invalid post request
+ [x] Save action missing field post request
+ [ ] Invalid delete action
+ [ ] Delete action
+
+SkelModelPermissao
+ [x] Get input filter
+ [x] Input filter valid
+ [x] Input filter invalido
  [ ] Insert
- [ ] Insert invalido
+ [x] Insert invalido
+ [ ] Update
+ [x] Update invalido
+ [ ] Delete
+
+SkelModelPost
+ [x] Get input filter
+ [x] Input filter valid
+ [x] Input filter invalido
+ [ ] Insert
+ [x] Insert invalido
  [ ] Update
  [ ] Delete
+
+SkelServicePost
+ [ ] Valid
+ [ ] Invalid post
+ [ ] Post no comments
 
