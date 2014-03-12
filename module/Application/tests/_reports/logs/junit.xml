@@ -1,249 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="33" assertions="43" failures="4" errors="10" time="29.489976">
-    <testsuite name="Skel Test Suite" tests="33" assertions="43" failures="4" errors="10" time="29.489976">
-      <testsuite name="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" tests="7" assertions="17" failures="0" errors="0" time="6.245071">
-        <testcase name="testGetInputFilter" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="13" assertions="1" time="0.917458"/>
-        <testcase name="testInputFilterValid" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="25" assertions="5" time="0.755733"/>
-        <testcase name="testInputFilterInvalido" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="39" assertions="1" time="0.749870"/>
-        <testcase name="testInsert" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="52" assertions="2" time="0.961972"/>
-        <testcase name="testInsertInvalido" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="68" assertions="2" time="0.866654"/>
-        <testcase name="testUpdate" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="77" assertions="3" time="1.164744"/>
-        <testcase name="testDelete" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="101" assertions="3" time="0.828640"/>
-      </testsuite>
-      <testsuite name="IndexControllerTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php" tests="8" assertions="6" failures="1" errors="4" time="8.682484">
-        <testcase name="test404" class="IndexControllerTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php" line="29" assertions="1" time="0.846789"/>
-        <testcase name="testIndexAction" class="IndexControllerTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php" line="37" assertions="0" time="0.995822">
-          <error type="Zend\Db\Adapter\Exception\InvalidQueryException">IndexControllerTest::testIndexAction
-Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed
-
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:245
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:240
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:291
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:258
-/var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php:82
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php:188
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php:40
-</error>
-        </testcase>
-        <testcase name="testSaveActionGetRequest" class="IndexControllerTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php" line="65" assertions="0" time="0.871972">
-          <error type="Zend\Db\Adapter\Exception\InvalidQueryException">IndexControllerTest::testSaveActionGetRequest
-Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed
-
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:245
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:240
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:291
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:258
-/var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php:82
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php:188
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php:67
-</error>
-        </testcase>
-        <testcase name="testSaveActionPostRequest" class="IndexControllerTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php" line="89" assertions="0" time="0.805673">
-          <error type="Zend\Db\Adapter\Exception\InvalidQueryException">IndexControllerTest::testSaveActionPostRequest
-Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed
-
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:245
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:240
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:291
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:258
-/var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php:82
-/var/www/zendf2napratica/module/Skel/src/Skel/Controller/IndexController.php:40
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractActionController.php:83
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php:468
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php:207
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php:117
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php:101
-</error>
-        </testcase>
-        <testcase name="testSaveActionInvalidPostRequest" class="IndexControllerTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php" line="117" assertions="2" time="2.426346"/>
-        <testcase name="testSaveActionMissingFieldPostRequest" class="IndexControllerTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php" line="132" assertions="1" time="0.882469"/>
-        <testcase name="testInvalidDeleteAction" class="IndexControllerTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php" line="147" assertions="2" time="0.822008">
-          <failure type="PHPUnit_Framework_ExpectationFailedException">IndexControllerTest::testInvalidDeleteAction
-Failed asserting that exception message 'Statement could not be executed' contains 'Código obrigatório'.
-
-</failure>
-        </testcase>
-        <testcase name="testDeleteAction" class="IndexControllerTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php" line="164" assertions="0" time="1.031405">
-          <error type="Zend\Db\Adapter\Exception\InvalidQueryException">IndexControllerTest::testDeleteAction
-Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed
-
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:245
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:240
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:291
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:258
-/var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php:82
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php:188
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php:166
-</error>
-        </testcase>
-      </testsuite>
-      <testsuite name="Skel\Model\PermissaoTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php" tests="8" assertions="11" failures="1" errors="2" time="6.249802">
-        <testcase name="testGetInputFilter" class="Skel\Model\PermissaoTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php" line="14" assertions="1" time="0.756410"/>
-        <testcase name="testInputFilterValid" class="Skel\Model\PermissaoTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php" line="26" assertions="5" time="0.780995"/>
-        <testcase name="testInputFilterInvalido" class="Skel\Model\PermissaoTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php" line="39" assertions="1" time="0.889837"/>
-        <testcase name="testInsert" class="Skel\Model\PermissaoTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php" line="49" assertions="0" time="0.756154">
-          <error type="Zend\Db\Adapter\Exception\InvalidQueryException">Skel\Model\PermissaoTest::testInsert
-Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed
-
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:245
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:240
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:291
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:258
-/var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php:82
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php:137
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php:147
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php:51
-</error>
-        </testcase>
-        <testcase name="testInsertInvalido" class="Skel\Model\PermissaoTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php" line="65" assertions="1" time="0.740177"/>
-        <testcase name="testUpdate" class="Skel\Model\PermissaoTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php" line="73" assertions="0" time="0.825103">
-          <error type="Zend\Db\Adapter\Exception\InvalidQueryException">Skel\Model\PermissaoTest::testUpdate
-Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed
-
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:245
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:240
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:291
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:258
-/var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php:82
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php:137
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php:147
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php:76
-</error>
-        </testcase>
-        <testcase name="testUpdateInvalido" class="Skel\Model\PermissaoTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php" line="98" assertions="2" time="0.847169"/>
-        <testcase name="testDelete" class="Skel\Model\PermissaoTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php" line="115" assertions="1" time="0.653957">
-          <failure type="PHPUnit_Framework_ExpectationFailedException">Skel\Model\PermissaoTest::testDelete
-Failed asserting that exception of type "Zend\Db\Adapter\Exception\InvalidQueryException" matches expected exception "Core\Model\EntityException". Message was: "Statement could not be executed" at
-#0 /var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php(291): Zend\Db\Adapter\Driver\Pdo\Statement-&gt;execute()
-#1 /var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php(258): Zend\Db\TableGateway\AbstractTableGateway-&gt;executeInsert(Object(Zend\Db\Sql\Insert))
-#2 /var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php(82): Zend\Db\TableGateway\AbstractTableGateway-&gt;insert(Array)
-#3 /var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php(137): Core\Db\TableGateway-&gt;save(Object(Skel\Model\Post))
-#4 /var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php(147): Skel\Model\PermissaoTest-&gt;addPost()
-#5 /var/www/zendf2napratica/module/Application/tests/src/Skel/Model/CommentTest.php(118): Skel\Model\PermissaoTest-&gt;addComment()
-#6 [internal function]: Skel\Model\PermissaoTest-&gt;testDelete()
-#7 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(956): ReflectionMethod-&gt;invokeArgs(Object(Skel\Model\PermissaoTest), Array)
-#8 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(824): PHPUnit_Framework_TestCase-&gt;runTest()
-#9 phar:///usr/bin/phpunit/phpunit/Framework/TestResult.php(692): PHPUnit_Framework_TestCase-&gt;runBare()
-#10 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(764): PHPUnit_Framework_TestResult-&gt;run(Object(Skel\Model\PermissaoTest))
-#11 phar:///usr/bin/phpunit/phpunit/Framework/TestSuite.php(722): PHPUnit_Framework_TestCase-&gt;run(Object(PHPUnit_Framework_TestResult))
-#12 phar:///usr/bin/phpunit/phpunit/Framework/TestSuite.php(722): PHPUnit_Framework_TestSuite-&gt;run(Object(PHPUnit_Framework_TestResult))
-#13 phar:///usr/bin/phpunit/phpunit/Framework/TestSuite.php(722): PHPUnit_Framework_TestSuite-&gt;run(Object(PHPUnit_Framework_TestResult))
-#14 phar:///usr/bin/phpunit/phpunit/TextUI/TestRunner.php(419): PHPUnit_Framework_TestSuite-&gt;run(Object(PHPUnit_Framework_TestResult))
-#15 phar:///usr/bin/phpunit/phpunit/TextUI/Command.php(179): PHPUnit_TextUI_TestRunner-&gt;doRun(Object(PHPUnit_Framework_TestSuite), Array)
-#16 phar:///usr/bin/phpunit/phpunit/TextUI/Command.php(132): PHPUnit_TextUI_Command-&gt;run(Array, true)
-#17 /usr/bin/phpunit(581): PHPUnit_TextUI_Command::main()
-#18 {main}.
-
-</failure>
-        </testcase>
-      </testsuite>
-      <testsuite name="Skel\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/PostTest.php" tests="7" assertions="8" failures="1" errors="2" time="5.958559">
-        <testcase name="testGetInputFilter" class="Skel\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/PostTest.php" line="13" assertions="1" time="0.765525"/>
-        <testcase name="testInputFilterValid" class="Skel\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/PostTest.php" line="25" assertions="4" time="1.485224"/>
-        <testcase name="testInputFilterInvalido" class="Skel\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/PostTest.php" line="38" assertions="1" time="0.715084"/>
-        <testcase name="testInsert" class="Skel\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/PostTest.php" line="51" assertions="0" time="0.826383">
-          <error type="Zend\Db\Adapter\Exception\InvalidQueryException">Skel\Model\PostTest::testInsert
-Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed
-
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:245
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:240
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:291
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:258
-/var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php:82
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/PostTest.php:55
-</error>
-        </testcase>
-        <testcase name="testInsertInvalido" class="Skel\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/PostTest.php" line="67" assertions="1" time="0.688393"/>
-        <testcase name="testUpdate" class="Skel\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/PostTest.php" line="75" assertions="0" time="0.792069">
-          <error type="Zend\Db\Adapter\Exception\InvalidQueryException">Skel\Model\PostTest::testUpdate
-Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed
-
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:245
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:240
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:291
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:258
-/var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php:82
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/PostTest.php:80
-</error>
-        </testcase>
-        <testcase name="testDelete" class="Skel\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Model/PostTest.php" line="99" assertions="1" time="0.685881">
-          <failure type="PHPUnit_Framework_ExpectationFailedException">Skel\Model\PostTest::testDelete
-Failed asserting that exception of type "Zend\Db\Adapter\Exception\InvalidQueryException" matches expected exception "Core\Model\EntityException". Message was: "Statement could not be executed" at
-#0 /var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php(291): Zend\Db\Adapter\Driver\Pdo\Statement-&gt;execute()
-#1 /var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php(258): Zend\Db\TableGateway\AbstractTableGateway-&gt;executeInsert(Object(Zend\Db\Sql\Insert))
-#2 /var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php(82): Zend\Db\TableGateway\AbstractTableGateway-&gt;insert(Array)
-#3 /var/www/zendf2napratica/module/Application/tests/src/Skel/Model/PostTest.php(104): Core\Db\TableGateway-&gt;save(Object(Skel\Model\Post))
-#4 [internal function]: Skel\Model\PostTest-&gt;testDelete()
-#5 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(956): ReflectionMethod-&gt;invokeArgs(Object(Skel\Model\PostTest), Array)
-#6 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(824): PHPUnit_Framework_TestCase-&gt;runTest()
-#7 phar:///usr/bin/phpunit/phpunit/Framework/TestResult.php(692): PHPUnit_Framework_TestCase-&gt;runBare()
-#8 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(764): PHPUnit_Framework_TestResult-&gt;run(Object(Skel\Model\PostTest))
-#9 phar:///usr/bin/phpunit/phpunit/Framework/TestSuite.php(722): PHPUnit_Framework_TestCase-&gt;run(Object(PHPUnit_Framework_TestResult))
-#10 phar:///usr/bin/phpunit/phpunit/Framework/TestSuite.php(722): PHPUnit_Framework_TestSuite-&gt;run(Object(PHPUnit_Framework_TestResult))
+  <testsuite name="" tests="16" assertions="39" failures="2" errors="0" time="11.105192">
+    <testsuite name="Skel Test Suite" tests="16" assertions="39" failures="2" errors="0" time="11.105192">
+      <testsuite name="Application\Model\CommentTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/CommentTest.php" tests="8" assertions="21" failures="2" errors="0" time="7.451151">
+        <testcase name="testGetInputFilter" class="Application\Model\CommentTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/CommentTest.php" line="15" assertions="1" time="1.813274"/>
+        <testcase name="testInputFilterValid" class="Application\Model\CommentTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/CommentTest.php" line="26" assertions="8" time="0.416268"/>
+        <testcase name="testInputFilterInvalido" class="Application\Model\CommentTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/CommentTest.php" line="42" assertions="2" time="0.932173"/>
+        <testcase name="testInsert" class="Application\Model\CommentTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/CommentTest.php" line="51" assertions="2" time="1.119959"/>
+        <testcase name="testInsertInvalido" class="Application\Model\CommentTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/CommentTest.php" line="66" assertions="1" time="0.561679">
+          <failure type="PHPUnit_Framework_ExpectationFailedException">Application\Model\CommentTest::testInsertInvalido
+Failed asserting that exception of type "PDOException" matches expected exception "Zend\Db\Adapter\Exception\InvalidQueryException". Message was: "SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`zf2napratica_test`.`comments`, CONSTRAINT `fk_comments_posts` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)" at
+#0 /var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php(240): PDOStatement-&gt;execute()
+#1 /var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php(291): Zend\Db\Adapter\Driver\Pdo\Statement-&gt;execute()
+#2 /var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php(258): Zend\Db\TableGateway\AbstractTableGateway-&gt;executeInsert(Object(Zend\Db\Sql\Insert))
+#3 /var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php(82): Zend\Db\TableGateway\AbstractTableGateway-&gt;insert(Array)
+#4 /var/www/zendf2napratica/module/Application/tests/src/Application/Model/CommentTest.php(71): Core\Db\TableGateway-&gt;save(Object(Application\Model\Comment))
+#5 [internal function]: Application\Model\CommentTest-&gt;testInsertInvalido()
+#6 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(956): ReflectionMethod-&gt;invokeArgs(Object(Application\Model\CommentTest), Array)
+#7 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(824): PHPUnit_Framework_TestCase-&gt;runTest()
+#8 phar:///usr/bin/phpunit/phpunit/Framework/TestResult.php(692): PHPUnit_Framework_TestCase-&gt;runBare()
+#9 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(764): PHPUnit_Framework_TestResult-&gt;run(Object(Application\Model\CommentTest))
+#10 phar:///usr/bin/phpunit/phpunit/Framework/TestSuite.php(722): PHPUnit_Framework_TestCase-&gt;run(Object(PHPUnit_Framework_TestResult))
 #11 phar:///usr/bin/phpunit/phpunit/Framework/TestSuite.php(722): PHPUnit_Framework_TestSuite-&gt;run(Object(PHPUnit_Framework_TestResult))
-#12 phar:///usr/bin/phpunit/phpunit/TextUI/TestRunner.php(419): PHPUnit_Framework_TestSuite-&gt;run(Object(PHPUnit_Framework_TestResult))
-#13 phar:///usr/bin/phpunit/phpunit/TextUI/Command.php(179): PHPUnit_TextUI_TestRunner-&gt;doRun(Object(PHPUnit_Framework_TestSuite), Array)
-#14 phar:///usr/bin/phpunit/phpunit/TextUI/Command.php(132): PHPUnit_TextUI_Command-&gt;run(Array, true)
-#15 /usr/bin/phpunit(581): PHPUnit_TextUI_Command::main()
-#16 {main}.
-
-</failure>
-        </testcase>
-      </testsuite>
-      <testsuite name="Skel\Service\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Service/PostTest.php" tests="3" assertions="1" failures="1" errors="2" time="2.354060">
-        <testcase name="testValid" class="Skel\Service\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Service/PostTest.php" line="14" assertions="0" time="0.708891">
-          <error type="Zend\Db\Adapter\Exception\InvalidQueryException">Skel\Service\PostTest::testValid
-Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed
-
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:245
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:240
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:291
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:258
-/var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php:82
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Service/PostTest.php:64
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Service/PostTest.php:16
-</error>
-        </testcase>
-        <testcase name="testInvalidPost" class="Skel\Service\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Service/PostTest.php" line="37" assertions="1" time="0.747620">
-          <failure type="PHPUnit_Framework_ExpectationFailedException">Skel\Service\PostTest::testInvalidPost
-Failed asserting that exception of type "Zend\Db\Adapter\Exception\InvalidQueryException" matches expected exception "Core\Model\EntityException". Message was: "Statement could not be executed" at
-#0 /var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php(233): Zend\Db\Adapter\Driver\Pdo\Statement-&gt;execute()
-#1 /var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php(208): Zend\Db\TableGateway\AbstractTableGateway-&gt;executeSelect(Object(Zend\Db\Sql\Select))
-#2 /var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php(195): Zend\Db\TableGateway\AbstractTableGateway-&gt;selectWith(Object(Zend\Db\Sql\Select))
-#3 /var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php(69): Zend\Db\TableGateway\AbstractTableGateway-&gt;select(Array)
-#4 /var/www/zendf2napratica/module/Skel/src/Skel/Service/Post.php(23): Core\Db\TableGateway-&gt;get(1)
-#5 /var/www/zendf2napratica/module/Application/tests/src/Skel/Service/PostTest.php(41): Skel\Service\Post-&gt;getComments(1)
-#6 [internal function]: Skel\Service\PostTest-&gt;testInvalidPost()
-#7 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(956): ReflectionMethod-&gt;invokeArgs(Object(Skel\Service\PostTest), Array)
-#8 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(824): PHPUnit_Framework_TestCase-&gt;runTest()
-#9 phar:///usr/bin/phpunit/phpunit/Framework/TestResult.php(692): PHPUnit_Framework_TestCase-&gt;runBare()
-#10 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(764): PHPUnit_Framework_TestResult-&gt;run(Object(Skel\Service\PostTest))
-#11 phar:///usr/bin/phpunit/phpunit/Framework/TestSuite.php(722): PHPUnit_Framework_TestCase-&gt;run(Object(PHPUnit_Framework_TestResult))
 #12 phar:///usr/bin/phpunit/phpunit/Framework/TestSuite.php(722): PHPUnit_Framework_TestSuite-&gt;run(Object(PHPUnit_Framework_TestResult))
-#13 phar:///usr/bin/phpunit/phpunit/Framework/TestSuite.php(722): PHPUnit_Framework_TestSuite-&gt;run(Object(PHPUnit_Framework_TestResult))
-#14 phar:///usr/bin/phpunit/phpunit/TextUI/TestRunner.php(419): PHPUnit_Framework_TestSuite-&gt;run(Object(PHPUnit_Framework_TestResult))
-#15 phar:///usr/bin/phpunit/phpunit/TextUI/Command.php(179): PHPUnit_TextUI_TestRunner-&gt;doRun(Object(PHPUnit_Framework_TestSuite), Array)
-#16 phar:///usr/bin/phpunit/phpunit/TextUI/Command.php(132): PHPUnit_TextUI_Command-&gt;run(Array, true)
-#17 /usr/bin/phpunit(581): PHPUnit_TextUI_Command::main()
-#18 {main}.
+#13 phar:///usr/bin/phpunit/phpunit/TextUI/TestRunner.php(419): PHPUnit_Framework_TestSuite-&gt;run(Object(PHPUnit_Framework_TestResult))
+#14 phar:///usr/bin/phpunit/phpunit/TextUI/Command.php(179): PHPUnit_TextUI_TestRunner-&gt;doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#15 phar:///usr/bin/phpunit/phpunit/TextUI/Command.php(132): PHPUnit_TextUI_Command-&gt;run(Array, true)
+#16 /usr/bin/phpunit(581): PHPUnit_TextUI_Command::main()
+#17 {main}.
 
 </failure>
         </testcase>
-        <testcase name="testPostNoComments" class="Skel\Service\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Service/PostTest.php" line="46" assertions="0" time="0.897549">
-          <error type="Zend\Db\Adapter\Exception\InvalidQueryException">Skel\Service\PostTest::testPostNoComments
-Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed
+        <testcase name="testUpdate" class="Application\Model\CommentTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/CommentTest.php" line="74" assertions="3" time="1.037595"/>
+        <testcase name="testUpdateInvalido" class="Application\Model\CommentTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/CommentTest.php" line="97" assertions="1" time="0.938444">
+          <failure type="PHPUnit_Framework_ExpectationFailedException">Application\Model\CommentTest::testUpdateInvalido
+Failed asserting that exception of type "PDOException" matches expected exception "Zend\Db\Adapter\Exception\InvalidQueryException". Message was: "SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`zf2napratica_test`.`comments`, CONSTRAINT `fk_comments_posts` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)" at
+#0 /var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php(240): PDOStatement-&gt;execute()
+#1 /var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php(351): Zend\Db\Adapter\Driver\Pdo\Statement-&gt;execute()
+#2 /var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php(318): Zend\Db\TableGateway\AbstractTableGateway-&gt;executeUpdate(Object(Zend\Db\Sql\Update))
+#3 /var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php(89): Zend\Db\TableGateway\AbstractTableGateway-&gt;update(Array, Array)
+#4 /var/www/zendf2napratica/module/Application/tests/src/Application/Model/CommentTest.php(106): Core\Db\TableGateway-&gt;save(Object(Application\Model\Comment))
+#5 [internal function]: Application\Model\CommentTest-&gt;testUpdateInvalido()
+#6 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(956): ReflectionMethod-&gt;invokeArgs(Object(Application\Model\CommentTest), Array)
+#7 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(824): PHPUnit_Framework_TestCase-&gt;runTest()
+#8 phar:///usr/bin/phpunit/phpunit/Framework/TestResult.php(692): PHPUnit_Framework_TestCase-&gt;runBare()
+#9 phar:///usr/bin/phpunit/phpunit/Framework/TestCase.php(764): PHPUnit_Framework_TestResult-&gt;run(Object(Application\Model\CommentTest))
+#10 phar:///usr/bin/phpunit/phpunit/Framework/TestSuite.php(722): PHPUnit_Framework_TestCase-&gt;run(Object(PHPUnit_Framework_TestResult))
+#11 phar:///usr/bin/phpunit/phpunit/Framework/TestSuite.php(722): PHPUnit_Framework_TestSuite-&gt;run(Object(PHPUnit_Framework_TestResult))
+#12 phar:///usr/bin/phpunit/phpunit/Framework/TestSuite.php(722): PHPUnit_Framework_TestSuite-&gt;run(Object(PHPUnit_Framework_TestResult))
+#13 phar:///usr/bin/phpunit/phpunit/TextUI/TestRunner.php(419): PHPUnit_Framework_TestSuite-&gt;run(Object(PHPUnit_Framework_TestResult))
+#14 phar:///usr/bin/phpunit/phpunit/TextUI/Command.php(179): PHPUnit_TextUI_TestRunner-&gt;doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#15 phar:///usr/bin/phpunit/phpunit/TextUI/Command.php(132): PHPUnit_TextUI_Command-&gt;run(Array, true)
+#16 /usr/bin/phpunit(581): PHPUnit_TextUI_Command::main()
+#17 {main}.
 
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:245
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/Adapter/Driver/Pdo/Statement.php:240
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:291
-/var/www/zendf2napratica/vendor/zendframework/zendframework/library/Zend/Db/TableGateway/AbstractTableGateway.php:258
-/var/www/zendf2napratica/module/Core/src/Core/Db/TableGateway.php:82
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Service/PostTest.php:64
-/var/www/zendf2napratica/module/Application/tests/src/Skel/Service/PostTest.php:48
-</error>
+</failure>
         </testcase>
+        <testcase name="testDelete" class="Application\Model\CommentTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/CommentTest.php" line="113" assertions="3" time="0.631759"/>
       </testsuite>
+      <testsuite name="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" tests="7" assertions="17" failures="0" errors="0" time="2.891083">
+        <testcase name="testGetInputFilter" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="13" assertions="1" time="0.357262"/>
+        <testcase name="testInputFilterValid" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="25" assertions="5" time="0.344490"/>
+        <testcase name="testInputFilterInvalido" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="39" assertions="1" time="0.366217"/>
+        <testcase name="testInsert" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="50" assertions="2" time="0.369056"/>
+        <testcase name="testInsertInvalido" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="66" assertions="2" time="0.447243"/>
+        <testcase name="testUpdate" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="75" assertions="3" time="0.582018"/>
+        <testcase name="testDelete" class="Application\Model\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Application/Model/PostTest.php" line="99" assertions="3" time="0.424797"/>
+      </testsuite>
+      <testsuite name="IndexControllerTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.762958">
+        <testcase name="test404" class="IndexControllerTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Controller/IndexControllerTest.php" line="28" assertions="1" time="0.762958"/>
+      </testsuite>
+      <testsuite name="Skel\Service\PostTest" file="/var/www/zendf2napratica/module/Application/tests/src/Skel/Service/PostTest.php" tests="0" assertions="0" failures="0" errors="0" time="0.000000"/>
     </testsuite>
   </testsuite>
 </testsuites>

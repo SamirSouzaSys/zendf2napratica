@@ -18,7 +18,7 @@ class PostTest extends ModelTestCase
         $this->assertInstanceOf("Zend\InputFilter\InputFilter", $if);
         return $if;
     }
- 
+
     /**
      * @depends testGetInputFilter
      */
@@ -41,9 +41,7 @@ class PostTest extends ModelTestCase
         //testa se os filtros estão funcionando
         $post = new Post();
         //title só pode ter 100 caracteres
-        $post->title = 'Lorem Ipsum é simplesmente uma simulação de texto da indústria 
-        tipográfica e de impressos. Lorem Ipsum é simplesmente uma simulação de texto 
-        da indústria tipográfica e de impressos';
+        $post->title = 'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos. Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos';
     }        
  
     /**
@@ -123,4 +121,3 @@ class PostTest extends ModelTestCase
     }
  
 }
-?>

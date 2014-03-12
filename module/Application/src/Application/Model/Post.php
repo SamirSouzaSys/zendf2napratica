@@ -40,11 +40,9 @@ class Post extends Entity
      * @var datetime
      */
     protected $post_date;
- 
- 
+  
     /**
      * Configura os filtros dos campos da entidade
-     *
      * @return Zend\InputFilter\InputFilter
      */
     public function getInputFilter()

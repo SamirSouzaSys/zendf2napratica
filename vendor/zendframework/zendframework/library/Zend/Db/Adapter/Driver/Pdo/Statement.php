@@ -238,7 +238,7 @@ class Statement implements StatementInterface, Profiler\ProfilerAwareInterface
 
         try {
             $this->resource->execute();
-        } catch (\PDOException $e) {
+        } catch (PDOException $e) {
             if ($this->profiler) {
                 $this->profiler->profilerFinish();
             }
